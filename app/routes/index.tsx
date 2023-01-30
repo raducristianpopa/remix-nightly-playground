@@ -1,5 +1,14 @@
+import { Button } from '~/components/Button';
+
 export default function Index() {
 	return (
-		<div className="text-red-500 text-4xl text-center">Tailwind Test</div>
+		<Button
+			intent="primary"
+			aria-label="sign up"
+			to="/sign-up"
+			prefetch="intent"
+		>
+			Sign up
+		</Button>
 	);
 }

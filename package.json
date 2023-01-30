@@ -8,9 +8,11 @@
 		"typecheck": "tsc"
 	},
 	"dependencies": {
+		"@headlessui/react": "^1.7.8",
 		"@remix-run/node": "0.0.0-nightly-52284ab-20230130",
 		"@remix-run/react": "0.0.0-nightly-52284ab-20230130",
 		"@remix-run/serve": "0.0.0-nightly-52284ab-20230130",
+		"class-variance-authority": "^0.4.0",
 		"isbot": "^3.6.5",
 		"react": "^18.2.0",
 		"react-dom": "^18.2.0"
