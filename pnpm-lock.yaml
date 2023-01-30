@@ -18,6 +18,7 @@ specifiers:
   react-dom: ^18.2.0
   tailwindcss: ^3.2.4
   typescript: ^4.8.4
+  zod: ^3.20.2
 
 dependencies:
   '@headlessui/react': 1.7.8_biqbaboplfbrettd7655fr4n2y
@@ -28,6 +29,7 @@ dependencies:
   isbot: 3.6.5
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
+  zod: 3.20.2
 
 devDependencies:
   '@remix-run/dev': 0.0.0-nightly-52284ab-20230130_dsonrzrcrmvo2ld2rhoqaw7vxi
@@ -7321,6 +7323,10 @@ packages:
     resolution: {integrity: sha512-rVksvsnNCdJ/ohGc6xgPwyN8eheCxsiLM8mxuE/t/mOVqJewPuO1miLpTHQiRgTKCLexL4MeAFVagts7HmNZ2Q==}
     engines: {node: '>=10'}
     dev: true
+
+  /zod/3.20.2:
+    resolution: {integrity: sha512-1MzNQdAvO+54H+EaK5YpyEy0T+Ejo/7YLHS93G3RnYWh5gaotGHwGeN/ZO687qEDU2y4CdStQYXVHIgrUl5UVQ==}
+    dev: false
 
   /zwitch/2.0.4:
     resolution: {integrity: sha512-bXE4cR/kVZhKZX/RjPEflHaKVhUVl85noU3v6b8apfQEc1x4A+zBxjZ4lN8LqGd6WZ3dl98pY4o717VFmoPp+A==}
