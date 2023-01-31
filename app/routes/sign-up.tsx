@@ -3,6 +3,9 @@ import { Form, useActionData } from '@remix-run/react';
 import { Button } from '~/components/Button';
 import { Input } from '~/components/Input';
 import { object, string } from 'zod';
+import crypto from 'crypto';
+import { bcrypt } from 'hash-wasm';
+import { prisma } from '~/lib/prisma.server';
 
 const signUpSchema = object({
 	email: string().email(),
@@ -20,6 +23,20 @@ export const action: ActionFunction = async ({ request }) => {
 		const errors = result.error.flatten();
 		return errors;
 	}
+
+	const hashedPwd = await bcrypt({
+		password: result.data.password,
+		salt: crypto.randomBytes(16),
+		costFactor: 10,
+		outputType: 'encoded'
+	});
+
+	await prisma.user.create({
+		data: {
+			email: result.data.email,
+			password: hashedPwd
+		}
+	});
 
 	return redirect('/users');
 };

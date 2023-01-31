@@ -2,6 +2,7 @@ lockfileVersion: 5.4
 
 specifiers:
   '@headlessui/react': ^1.7.8
+  '@prisma/client': ^4.9.0
   '@remix-run/dev': 0.0.0-nightly-52284ab-20230130
   '@remix-run/eslint-config': 0.0.0-nightly-52284ab-20230130
   '@remix-run/node': 0.0.0-nightly-52284ab-20230130
@@ -12,8 +13,10 @@ specifiers:
   autoprefixer: ^10.4.13
   class-variance-authority: ^0.4.0
   eslint: ^8.27.0
+  hash-wasm: ^4.9.0
   isbot: ^3.6.5
   postcss: ^8.4.21
+  prisma: ^4.9.0
   react: ^18.2.0
   react-dom: ^18.2.0
   tailwindcss: ^3.2.4
@@ -22,10 +25,12 @@ specifiers:
 
 dependencies:
   '@headlessui/react': 1.7.8_biqbaboplfbrettd7655fr4n2y
+  '@prisma/client': 4.9.0_prisma@4.9.0
   '@remix-run/node': 0.0.0-nightly-52284ab-20230130
   '@remix-run/react': 0.0.0-nightly-52284ab-20230130_biqbaboplfbrettd7655fr4n2y
   '@remix-run/serve': 0.0.0-nightly-52284ab-20230130
   class-variance-authority: 0.4.0_typescript@4.9.4
+  hash-wasm: 4.9.0
   isbot: 3.6.5
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
@@ -39,6 +44,7 @@ devDependencies:
   autoprefixer: 10.4.13_postcss@8.4.21
   eslint: 8.33.0
   postcss: 8.4.21
+  prisma: 4.9.0
   tailwindcss: 3.2.4_postcss@8.4.21
   typescript: 4.9.4
 
@@ -1679,6 +1685,28 @@ packages:
       tiny-glob: 0.2.9
       tslib: 2.5.0
     dev: true
+
+  /@prisma/client/4.9.0_prisma@4.9.0:
+    resolution: {integrity: sha512-bz6QARw54sWcbyR1lLnF2QHvRW5R/Jxnbbmwh3u+969vUKXtBkXgSgjDA85nji31ZBlf7+FrHDy5x+5ydGyQDg==}
+    engines: {node: '>=14.17'}
+    requiresBuild: true
+    peerDependencies:
+      prisma: '*'
+    peerDependenciesMeta:
+      prisma:
+        optional: true
+    dependencies:
+      '@prisma/engines-version': 4.9.0-42.ceb5c99003b99c9ee2c1d2e618e359c14aef2ea5
+      prisma: 4.9.0
+    dev: false
+
+  /@prisma/engines-version/4.9.0-42.ceb5c99003b99c9ee2c1d2e618e359c14aef2ea5:
+    resolution: {integrity: sha512-M16aibbxi/FhW7z1sJCX8u+0DriyQYY5AyeTH7plQm9MLnURoiyn3CZBqAyIoQ+Z1pS77usCIibYJWSgleBMBA==}
+    dev: false
+
+  /@prisma/engines/4.9.0:
+    resolution: {integrity: sha512-t1pt0Gsp+HcgPJrHFc+d/ZSAaKKWar2G/iakrE07yeKPNavDP3iVKPpfXP22OTCHZUWf7OelwKJxQgKAm5hkgw==}
+    requiresBuild: true
 
   /@remix-run/dev/0.0.0-nightly-52284ab-20230130_dsonrzrcrmvo2ld2rhoqaw7vxi:
     resolution: {integrity: sha512-diQPTxAl9wUma1xmUN9qh7Scc9M3nOCkNz0GbEy5yOXYpgDbOm4l1jAzYNNh/bLM3SLXSYbZgsOtLcyx/fnXSg==}
@@ -4249,6 +4277,10 @@ packages:
     dependencies:
       function-bind: 1.1.1
 
+  /hash-wasm/4.9.0:
+    resolution: {integrity: sha512-7SW7ejyfnRxuOc7ptQHSf4LDoZaWOivfzqw+5rpcQku0nHfmicPKE51ra9BiRLAmT8+gGLestr1XroUkqdjL6w==}
+    dev: false
+
   /hast-util-to-estree/2.2.1:
     resolution: {integrity: sha512-kiGD9WIW3gRKK8Gao3n1f+ahUeTMeJUJILnIT2QNrPigDNdH7rJxzhEbh81UajGeAdAHFecT1a+fLVOCTq9B4Q==}
     dependencies:
@@ -6014,6 +6046,14 @@ packages:
     dependencies:
       parse-ms: 2.1.0
     dev: true
+
+  /prisma/4.9.0:
+    resolution: {integrity: sha512-bS96oZ5oDFXYgoF2l7PJ3Mp1wWWfLOo8B/jAfbA2Pn0Wm5Z/owBHzaMQKS3i1CzVBDWWPVnOohmbJmjvkcHS5w==}
+    engines: {node: '>=14.17'}
+    hasBin: true
+    requiresBuild: true
+    dependencies:
+      '@prisma/engines': 4.9.0
 
   /process-nextick-args/2.0.1:
     resolution: {integrity: sha512-3ouUOpQhtgrbOa17J7+uxOTpITYWaGP7/AhoR3+A+/1e9skrzelGi/dXzEYyvbxubEF6Wn2ypscTKiKJFFn1ag==}

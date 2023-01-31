@@ -9,10 +9,12 @@
 	},
 	"dependencies": {
 		"@headlessui/react": "^1.7.8",
+		"@prisma/client": "^4.9.0",
 		"@remix-run/node": "0.0.0-nightly-52284ab-20230130",
 		"@remix-run/react": "0.0.0-nightly-52284ab-20230130",
 		"@remix-run/serve": "0.0.0-nightly-52284ab-20230130",
 		"class-variance-authority": "^0.4.0",
+		"hash-wasm": "^4.9.0",
 		"isbot": "^3.6.5",
 		"react": "^18.2.0",
 		"react-dom": "^18.2.0",
@@ -26,6 +28,7 @@
 		"autoprefixer": "^10.4.13",
 		"eslint": "^8.27.0",
 		"postcss": "^8.4.21",
+		"prisma": "^4.9.0",
 		"tailwindcss": "^3.2.4",
 		"typescript": "^4.8.4"
 	},
